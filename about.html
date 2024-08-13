@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Atlas Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5f72be, #9b23ea);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #9b23ea;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2:after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: #fff;
+            display: block;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+
+        .mission, .vision {
+            background: #2e2e2e;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mission:hover, .vision:hover {
+            transform: translateY(-10px);
+        }
+
+        .join-us {
+            text-align: center;
+            background: #9b23ea;
+            color: #ffdd57; /* Bright yellow text color */
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease-in-out;
+        }
+
+        .join-us:hover {
+            background: #7a1ab7;
+        }
+
+        .join-us a {
+            color: #ffdd57; /* Matching the link color with the text */
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 2px solid #ffdd57;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .join-us a:hover {
+            background: #ffdd57;
+            color: #7a1ab7;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 768px) {
+            header {
+                padding: 80px 0;
+            }
+
+            header h1 {
+                font-size: 4rem;
+            }
+
+            header p {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        #join{
+            color: #ffdd57;
+        }
+.back-button {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.back-button:hover {
+    background: #555;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+<button class="back-button" onclick="window.location.href='index.html';">Back to Homepage</button>
+        <h1>Atlas Club</h1>
+        <p>Dolna Day School</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to the Atlas Club, the premier student organization at Dolna Day School. Founded with the mission of empowering students to explore the world, expand their knowledge, and develop leadership skills, Atlas is a diverse community where creativity, curiosity, and collaboration thrive.</p>
+        </section>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide a platform for students to engage in meaningful activities, both academic and extracurricular, that promote personal growth, global awareness, and a sense of community. We strive to inspire students to think critically, act ethically, and contribute positively to society.</p>
+        </section>
+
+        <section class="vision">
+            <h2>Our Vision</h2>
+            <p>At Atlas, we envision a vibrant student community where everyone feels valued, inspired, and empowered to reach their full potential. We aim to foster a spirit of exploration, innovation, and leadership that will equip our members with the skills and experiences necessary to succeed in the ever-changing world.</p>
+        </section>
+
+        <section>
+            <h2>What We Do</h2>
+            <p>The Atlas Club hosts a variety of activities throughout the year, including academic competitions, cultural events, community service projects, and leadership workshops. Our events are designed to challenge our members intellectually and creatively while promoting teamwork and camaraderie.</p>
+        </section>
+
+        <section class="join-us">
+            <h2 id="join">Join Us</h2>
+            <p>If you're a student at Dolna Day School who is eager to learn, grow, and make a difference, we invite you to join the Atlas Club. Whether you're interested in organizing events, participating in discussions, or leading initiatives, there's a place for you here.</p>
+            <p>To become a member or learn more about our upcoming events, please contact us at <a href="mailto:atlas@dolnadayschool.edu">atlas@dolnadayschool.edu</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Atlas Club - Dolna Day School. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
