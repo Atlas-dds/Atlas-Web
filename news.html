@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Notice Board</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0e5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        .notice-board {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            max-width: 800px;
+            margin: 40px auto;
+            animation: fadeIn 1s; /* Animation */
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s; /* Animation */
+        }
+
+        .notice {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+            transition: background-color 0.3s ease; /* Transition effect */
+        }
+
+        .notice:last-child {
+            border-bottom: none;
+        }
+
+        .notice:hover {
+            background-color: #f0f4ff; /* Hover effect */
+        }
+
+        h2 {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 5px 0;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease; /* Transition effect */
+            animation: fadeInUp 1s; /* Animation */
+        }
+
+        .back-button:hover {
+            background-color: #004494;
+        }
+
+        @media (max-width: 600px) {
+            .notice-board {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .back-button {
+                font-size: 0.875rem;
+                padding: 8px 16px;
+            }
+        }
+
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <a class="back-button animate__animated animate__fadeInUp" href="index.html">Back to Homepage</a>
+
+    <div class="notice-board animate__animated animate__fadeIn">
+        <h1 class="animate__animated animate__fadeInDown">News</h1>
+        <div class="notice animate__animated animate__fadeInUp">
+            <h2>Submission for Debate Competition</h2>
+            <p>Please submit your writing on the topic, "Is Snighdo a true dictator?" for the debate competition by 14th Sep 2024.</p>
+            <p><strong>Date:</strong> August 15th, 2024</p>
+        </div>
+        <div class="notice animate__animated animate__fadeInUp">
+            <h2>Upcoming Event</h2>
+            <p>The 1st Ever Inter-class Debate Competition at Dolna Day School, co-hosted by the members of Atlas Council and Dolna staff.</p>
+            <p><strong>Date:</strong> August 15th, 2024</p>
+        </div>
+    </div>
+</body>
+</html>

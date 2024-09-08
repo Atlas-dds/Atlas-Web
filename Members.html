@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .header {
+            background-color: #6c63ff;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            margin-bottom: 2rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        .header h1 {
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+
+        .back-button {
+            margin: 1rem;
+            padding: 0.5rem 1.5rem;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 1s ease;
+        }
+
+        .back-button:hover {
+            background-color: #5146d0;
+        }
+
+        .members-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0 2rem;
+        }
+
+        .members-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .members-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .avatar {
+            background-color: #6c63ff;
+            color: white;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0 auto 1rem;
+            animation: fadeIn 1s ease;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .contact-info p {
+            font-size: 0.85rem;
+            color: #6c63ff;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 576px) {
+            .members-container {
+                gap: 1rem;
+            }
+
+            .members-card {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header animate__animated animate__fadeInDown">
+        <h1>Current Members of Our Club</h1>
+    </div>
+    <center>
+        <div class="text-center">
+            <button class="back-button animate__animated animate__fadeInUp" onclick="window.location.href='index.html';">Back to Homepage</button>
+        </div>
+    </center>
+    <div class="members-container">
+        <!-- Members Cards -->
+        <div class="members-card animate__animated animate__fadeInUp">
+            <div class="avatar">AS</div>
+            <h2>Ashton Snighdo</h2>
+            <p><strong>Position:</strong> President</p>
+            <p><strong>Department:</strong> Head of all departments</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> Yet to be known</p>
+            </div>
+        </div>
+
+        <div class="members-card animate__animated animate__fadeInUp">
+            <div class="avatar">ACC</div>
+            <h2>Aahit Chandra Chakraborty</h2>
+            <p><strong>Position:</strong> Vice-President</p>
+            <p><strong>Department:</strong> Assistant of President for all departments</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> Yet to be known</p>
+            </div>
+        </div>
+
+        <div class="members-card animate__animated animate__fadeInUp">
+            <div class="avatar">AD</div>
+            <h2>Avirup De</h2>
+            <p><strong>Position:</strong> Secretary and Head of Finance</p>
+            <p><strong>Department:</strong> Administration and Finance</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> avirup_de@yahoo.com</p>
+            </div>
+        </div>
+
+        <div class="members-card animate__animated animate__fadeInUp">
+            <div class="avatar">MM</div>
+            <h2>Modhura Mandal</h2>
+            <p><strong>Position:</strong> Secretary, Class Representative, and Head of Public Relations</p>
+            <p><strong>Department:</strong> Administration and News-Letter</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> Yet to be known</p>
+            </div>
+        </div>
+
+        <div class="members-card animate__animated animate__fadeInUp">
+            <div class="avatar">SM</div>
+            <h2>Sriya Mondal</h2>
+            <p><strong>Position:</strong> Secretary and Editor</p>
+            <p><strong>Department:</strong> Administration and News-Letter</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> Yet to be known</p>
+            </div>
+        </div>
+
+        <div class="members-card animate__animated animate__fadeInUp">
+            <div class="avatar">RM</div>
+            <h2>Rishav Mukherjee</h2>
+            <p><strong>Position:</strong> Editor</p>
+            <p><strong>Department:</strong> News-Letter</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> mukherjeerishav@gmail.com</p>
+            </div>
+        </div>
+
+          <div class="members-card">
+            <div class="avatar">AD</div>
+            <h2>Anubhav Das</h2>
+            <p><strong>Position:</strong> Secretary</p>
+            <p><strong>Department:</strong> Administration</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> Yet to be known</p>
+            </div>
+        </div>
+
+        <div class="members-card">
+            <div class="avatar">IS</div>
+            <h2>Ishmit</h2>
+            <p><strong>Position:</strong> Secretary</p>
+            <p><strong>Department:</strong> Administration</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> Yet to be known</p>
+            </div>
+        </div>
+
+        <div class="members-card">
+            <div class="avatar">RR</div>
+            <h2>Ritika Ray</h2>
+            <p><strong>Position:</strong> Class Representative</p>
+            <p><strong>Department:</strong> Administration</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> Yet to be known</p>
+            </div>
+        </div>
+
+        <div class="members-card">
+            <div class="avatar">S_</div>
+            <h2>Simi ____</h2>
+            <p><strong>Position:</strong> Class Representative</p>
+            <p><strong>Department:</strong> Administration</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> Yet to be known</p>
+            </div>
+        </div>
+
+        <div class="members-card">
+            <div class="avatar">S_</div>
+            <h2>Samriddhi ____</h2>
+            <p><strong>Position:</strong> Class Representative</p>
+            <p><strong>Department:</strong> </p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> james.turner@example.com</p>
+            </div>
+        </div>
+
+        <div class="members-card">
+            <div class="avatar">EM</div>
+            <h2>Emily Moore</h2>
+            <p><strong>Position:</strong> Customer Service Rep</p>
+            <p><strong>Department:</strong> Customer Service</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> emily.moore@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
